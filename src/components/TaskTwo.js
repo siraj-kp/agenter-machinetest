@@ -3,7 +3,12 @@ import React from "react";
 const DUMMY_DATA = [
   {
     country: "IN",
-    states: ["KA", "KL", "TN", "MH"],
+    states: {
+      state1: "KA",
+      state2: "KL",
+      state3: "TN",
+      state4: "MH",
+    },
     id: "1",
   },
   {
