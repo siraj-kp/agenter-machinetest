@@ -3,8 +3,6 @@ import React from "react";
 function DisplayName(props) {
   return (
     <div>
-      <h1>Task3</h1>
-
       <h3>
         {props.prefix +
           " " +

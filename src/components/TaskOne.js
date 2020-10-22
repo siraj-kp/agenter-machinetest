@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, useParams } from "react-router-dom";
 import "./TaskOne.scss";
 
 function TaskOne() {
@@ -6,6 +7,8 @@ function TaskOne() {
   const handleDropMenu = () => {
     showMenu ? setShowMenu(false) : setShowMenu(true);
   };
+  const userId = 2;
+
   return (
     <div>
       <h1>Task1</h1>
@@ -23,6 +26,9 @@ function TaskOne() {
           ""
         )}
       </div>
+      <Link to={`/${userId}/profile`}>
+        <button>view profile</button>
+      </Link>
     </div>
   );
 }

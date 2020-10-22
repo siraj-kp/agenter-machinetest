@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 import DisplayName from "./DisplayName";
 import { useHttpClient } from "./http-hook";
-import ProfileItem from "./ProfileItem";
+import ProfileList from "./ProfileList";
 
 function ProfileInfo() {
   const [loadedUser, setLoadedUser] = useState();
@@ -20,7 +20,7 @@ function ProfileInfo() {
   }, [sendRequest]);
 
   return (
-    <div>{!isLoading && loadedUser && <ProfileItem user={loadedUser} />}</div>
+    <div>{!isLoading && loadedUser && <ProfileList user={loadedUser} />}</div>
   );
 }
 
